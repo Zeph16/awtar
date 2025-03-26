@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  awtar-php-api:
+    build: ./api
+    ports:
+      - "8000:8000"
+
+  awtar-mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: awtar
+      MYSQL_DATABASE: awtar
+      MYSQL_USER: awtar
+      MYSQL_PASSWORD: awtar
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+
+  awtar-react-app:
+    build: ./app
+    ports:
+      - "3000:5173"

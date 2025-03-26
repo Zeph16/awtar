@@ -1,0 +1,168 @@
+.blog-page .blog-image {
+  width: 100vw; 
+  margin-left: calc((-100vw + 100%) / 2);
+  margin-right: calc((-100vw + 100%) / 2);
+  max-width: 100vw;
+  height: 500px;
+  margin-top: -30px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.blog-page .section-title {
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+.blog-page .blog-details {
+  margin-bottom: 3em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1em;
+}
+
+.blog-details > * {
+  flex: 1 0 100px;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.blog-details .tag {
+  border-radius: 0;
+  background-color: transparent;
+  padding: 0;
+}
+.blog-page .profile-mini {
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.blog-page .profile-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1em;
+}
+.blog-page .profile-mini div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+.blog-page .profile-mini div button.follow {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.blog-page .profile-mini div button.unfollow {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 0.8em;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blog-page article {
+  font-family: 'Merriweather', serif;
+  width: 80%;
+  margin: 5em auto;
+  line-height: 1.8em;
+  letter-spacing: 0.3px;
+  font-size: 1.1em;
+  text-indent: 1em;
+}
+.blog-page article * {
+  margin-bottom: 0.5em;
+}
+.blog-page article ul {
+  list-style-type: circle;
+}
+.blog-page article h1 {
+  font-size: 2em;
+  margin-top: 1em;
+}
+.blog-page article h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+.blog-page article h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+.blog-page article img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin: 1em 0;
+}
+
+
+.blog-page section.bottom {
+  margin: 2em 0 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+
+.blog-page div.like button.like {
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  font-size: 1.2em;
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blog-page div.like button.unlike {
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  font-size: 1.2em;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+section.more > h1 {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.blog-page .blog-details button {
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  font-size: 1em;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: bold;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.blog-page .blog-details button.delete {
+  color: red;
+}
+
+@media (max-width: 700px) {
+  .blog-page article {
+    width: 100%;
+  }
+}

@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #3F2305;
+  --secondary-color: #DFD7BF;
+  --tertiary-color: #F2EAD3;
+  --background-color: #F5F5F5;
+  min-height: 100vh;
+}
+body {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+}
+body > div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body > div > main {
+  flex: 1;
+  width: 100%;
+}
+button {
+  outline: none;
+  border: none;
+}
+a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  :root {
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    font-size: 12px;
+  }
+}
+.adjust-container {
+  padding-top: 50px;
+  transition: none;
+}
+
+.container {
+  position: relative;
+  max-width: 1300px;
+  padding: 0 3em;
+  margin: 0 auto;
+}

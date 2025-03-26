@@ -1,0 +1,12 @@
+.popup {
+  padding: 16px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background-color: var(--background-color);
+  cursor: pointer;
+  box-shadow: 0 0 10px 0 var(--primary-color);
+  font-size: 16px;
+}
+.popup p span {
+  font-weight: bold;
+}

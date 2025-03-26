@@ -1,0 +1,111 @@
+.comments {
+  max-width: 80%;
+  min-width: 350px;
+  margin: 0 auto;
+}
+.comments .title {
+  font-size: 1.5em;
+}
+.comments .title span {
+  color: var(--primary-color);
+  font-size: 0.6em;
+  margin-left: 2em;
+}
+.comments i {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.comments ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.comments ul li {
+  display: flex;
+  gap: 0.7em;
+}
+.comments ul li .profile-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.comments ul li .author-name {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+}
+.comments ul li p {
+  font-size: 1.1em;
+}
+.comments li button.like {
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  border-radius: 5px;
+  color: var(--primary-color);
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+.comments li p span {
+  font-size: 0.5em;
+}
+.comments li .author-name span {
+  font-weight: normal;
+  font-size: 0.8em;
+  margin-left: 1em;
+}
+.comments .left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  align-items: center;
+}
+.comments .left img {
+  cursor: pointer;
+}
+
+.comments .left i {
+  font-size: 0.8em;
+}
+.comments .left i:last-child {
+  color: red;
+}
+
+
+.comments form {
+  display: flex;
+  gap: 1em;
+  margin: 2em 0 3em;
+  border-bottom: 1px solid var(--primary-color);
+  align-items: center;
+  padding: 0 0 0.5em;
+}
+.comments form input {
+  color: var(--primary-color);
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-size: 1.2em;
+}
+
+.comments form button {
+  background-color: transparent;
+  font-size: 1.2em;
+  padding: 0.5em;
+}
+.comments form img {
+  width: 40px;
+  height: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+
+}

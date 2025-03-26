@@ -1,0 +1,30 @@
+.footer-app {
+  height: 140px;
+  margin-top: 3em;
+  overflow: hidden;
+  position: relative;
+}
+.footer-app > div {
+  display: flex;
+  justify-content: center;
+  /* background-color: var(--primary-color); */
+  height: 200px;
+  width: calc(100% + 300px);
+  /* width: 100%; */
+  border-radius: 50%;
+  padding: 2em;
+  box-shadow: 0 0px 13px var(--primary-color);
+  top: 50px;
+  left: -150px;
+  position: absolute;
+}
+.footer-app > div > p {
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+}
+.footer-app > div > p > span {
+  font-size: 1.3em;
+  margin: 0.3em 0 0.1em;
+  font-family: 'Playfair Display', serif;
+}

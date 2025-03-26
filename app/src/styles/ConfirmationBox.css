@@ -1,0 +1,56 @@
+.confirm-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.confirm-wrapper .confirm {
+  border-radius: 1em;
+  border: 2px solid var(--primary-color);
+  background-color: var(--background-color);
+  padding: 1em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  min-height: 250px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.confirm .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.confirm button {
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  background: transparent;
+  width: 30%;
+}
+.confirm .yes {
+  color: green;
+  border: 1px solid green;
+}
+.confirm .no {
+  color: red;
+  border: 1px solid red;
+}
+.confirm .yes:hover {
+  color: whitesmoke;
+  background-color: green;
+}
+.confirm .no:hover {
+  color: whitesmoke;
+  background-color: red;
+}

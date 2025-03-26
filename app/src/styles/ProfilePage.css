@@ -1,0 +1,331 @@
+.profile-page i {
+  cursor: pointer;
+}
+.profile-page .empty-message {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.profile-page .empty-message p {
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.profile-page .top {
+  display: flex;
+  gap: 2em;
+  margin-bottom: 2em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2em;
+  box-shadow: 0 0 15px 0 var(--primary-color);
+  padding: 0em 2em;
+}
+.profile-page .top .profile-details > h1 {
+  font-size: 2em;
+  justify-content: space-evenly;
+}
+.profile-page .top .profile-image {
+  padding: 2em;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+.profile-page .top .profile-details {
+  border-left: 1px solid var(--primary-color);
+  padding: 2em 0 2em 2em;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-details p {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+.profile-details > *:last-child {
+  margin-bottom: 0;
+}
+.profile-details > .counts {
+  display: flex;
+}
+.profile-details > .counts p {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.profile-details > .counts > * {
+  flex: 1 0 50%;
+}
+.profile-details > div.follow {
+  margin-top: 3em;
+}
+.profile-details > div.follow button {
+  padding: 1em 2em;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 50%;
+}
+.profile-details > h1 div {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.profile-details button.show-password {
+  background: transparent;
+  font-size: 0.9em;
+  margin-left: 0.5em;
+}
+.profile-details > div.follow button i {
+  margin-right: 0.5em;
+}
+.profile-details > div.follow button.follow {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+.profile-details > div.follow button.unfollow {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+.profile-page > .bottom {
+  margin-top: 10em;
+  border-radius: 2em;
+  overflow: hidden;
+  border: 1px solid var(--primary-color);
+}
+.profile-page > .bottom .buttons {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid var(--primary-color);
+  margin-bottom: 4em;
+  
+}
+.profile-page > .bottom .buttons button {
+  padding: 1em 2em;
+  width: 50%;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+.profile-page > .bottom .buttons button.active {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+.profile-page .list {
+  margin: 0 2em;
+}
+
+.profile-page input[type="text"], .profile-page textarea {
+  width: 100%;
+  padding: 1em;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+  margin: 1em 0 2em;
+  font: inherit;
+  resize: none;
+  font-size: 1em;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+.profile-page .top input[type="text"]:first-child {
+  font-size: 1.5em;
+}
+.profile-page .top .images {
+  margin-bottom: 2em;
+  max-height: 400px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 40%;
+}
+.profile-page .top .images > * {
+  flex: 1 0 40%;
+}
+.profile-page .top div.image-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.profile-page .top div.image-selector div.image input {
+  display: none;
+}
+
+.profile-page .top div.image-selector div.image {
+  position: relative;
+  width: 50px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+.profile-page .top div.image-selector div.image label {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-color);
+  display: block;
+  cursor: pointer;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-page .top div.image-selector div.image label img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-page .top div.image-selector div.image input:checked + label {
+  border: 5px solid var(--primary-color);
+}
+.profile-page .top div.image-selector div.image input:checked + label img {
+  opacity: 0.5;
+}
+
+.top .options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.profile-page span.error {
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+.profile-details .profile-buttons {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 2em;
+  margin-top: 5em;
+}
+.profile-details .profile-buttons button {
+  width: 40%;
+  cursor: pointer;
+  padding: 0.5em;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid red;
+  color: red;
+  font-weight: bold;
+  font-size: 1em;
+}
+.profile-buttons button:hover {
+  background-color: red;
+  color: whitesmoke;
+}
+.profile-buttons button i {
+  margin-right: 1em;
+}
+
+.profile-page div.followers {
+  margin-bottom: 2em;
+  font-weight: bold;
+  display: flex;
+  gap: 1em;
+  cursor: pointer;
+}
+.profile-page div.followers div {
+  text-decoration: none;
+  opacity: 0.5;
+}
+.profile-page .top div.followers div:hover {
+  transform: scale(1.1);
+}
+.profile-page .top div.followers span {
+  font-size: 1.1em;
+}
+
+.profile-page .followers-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2em;
+  padding: 2em;
+  border-radius: 2em;
+  box-shadow: 0 0 15px 0 var(--primary-color);
+}
+.followers-list button.back {
+  padding: 0.5em 1em;
+  background-color: transparent;
+  width: 150px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+}
+.followers-list .list-wrapper {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .profile-page .top {
+    flex-direction: column;
+    gap: 1em;
+    padding: 4em 2em;
+  }
+  .profile-page .top > * {
+    text-align: center;
+  }
+  .profile-page .top > .profile-details {
+    padding: 0;
+    width: 100%;
+    border-left: 1px solid transparent;
+  }
+  .profile-page .top .profile-image {
+    height: 200px;
+    width: 200px;
+    padding: 0;
+  }
+  .profile-page .image-selector > * {
+    width: 50px;
+  }
+  .profile-details {
+    width: 100%;
+  }
+  .profile-details p:nth-last-of-type(1), .profile-details p:nth-last-of-type(2) {
+    font-size: 1.2em;
+  }
+  .profile-details .profile-buttons {
+    justify-content: space-evenly;
+  }
+  .profile-page div.followers {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .profile-page div.follow button {
+    width: 100%;
+  }
+}

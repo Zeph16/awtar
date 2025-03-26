@@ -1,0 +1,75 @@
+Disclaimer - I don't even know if all of these are accurate; this was something i used to document the app as I went along
+	   - A lot of things got documented and removed, this is just the last state it was in when I "finished" development
+BLOGS
+  GET
+    getBlog/s                 /blogs  /blogs/blog_id
+    getTags                   /blogs/0/tags
+    getBlogTags               /blogs/blog_id/tags
+    getBlogLikes              /blogs/blog_id/likes
+    getCommentLikes           /blogs/blog_id/likes/comment_id
+    getBlogComment/s          /blogs/blog_id/comments/   /blogs/blog_id/comments/comment_id
+  POST
+    postBlog                  /blogs
+    postComment               /blogs/blog_id/comments
+    likeBlog                  /blogs/blog_id/like
+    likeComment               /blogs/blog_id/likes/comment_id
+  PUT
+    editBlog                  /blogs/blog_id
+    editComment               /blogs/blog_id/comments/comment_id
+  DELETE
+    unlikeBlog                /blogs/blog_id/likes
+    unlikeComment             /blogs/blog_id/likes/comment_id
+    deleteComment             /blogs/blog_id/comments/comment_id
+    deleteBlog                /blogs/id
+
+AUTHORS
+  GET
+    getAuthor/s               /authors  /authors/id
+    getAuthorNotifications    /authors/id/notifications
+    getAuthorFollowers        /authors/id/followers
+    getAuthorFollowing        /authors/id/following
+    getBookmarks              /authors/id/bookmarks
+  POST
+    followAuthor              /authors/id/follow
+    bookmark                  /authors/id/bookmark/blog_id
+  PUT
+    readNotification          /authors/id/notifications/notif_id
+    editAuthor                /authors/id
+  DELETE
+    deleteAuthor              /authors/id
+    deleteBookmark            /authors/author_id/bookmarks/blog_id
+    deleteNotification        /authors/id/notificatiosn/notif_id
+    unfollowAuthor            /authors/id/follow
+
+
+PROTECTED
+readNotification
+editBlog
+editAuthor
+editComment
+
+
+EVENTS
+blog - created, updated, deleted
+likes - liked, unliked
+
+
+NOTIFICATIONS
+followed author created blog
+followed author edited blog
+followed author liked blog
+followed author commented
+their blog liked
+their comment liked
+they are followed
+
+
+GLOBAL STATE
+- blogs, likes, profile, tags, authors, notifications
+
+
+FUTURE (Disclaimer from the future - Already implemented)
+- sse sends the event data as a json
+- cant follow an author multiple times
+- cant like a blog multiple times
+- changing blog tags

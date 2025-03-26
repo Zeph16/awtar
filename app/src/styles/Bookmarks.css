@@ -1,0 +1,13 @@
+.bookmarks-page .empty-message {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.bookmarks-page .empty-message p {
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+}

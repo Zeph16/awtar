@@ -1,0 +1,51 @@
+.author-list {
+  display: flex;
+  padding: 2em;
+  gap: 2em;
+  flex-direction: column;
+}
+.authors-list > .author {
+  display: flex;
+  gap: 1em;
+}
+.author > .author-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 1.2em;
+}
+.author > div.author-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.author > div.author-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.author > .author-details > h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.author > .author-details > p {
+  font-size: 1.3em;
+  opacity: 0.7;
+  font-weight: bold;
+}
+.author-list-wrapper .empty-message {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.author-list-wrapper .empty-message p {
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+}

@@ -1,0 +1,131 @@
+.popups {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: fixed;
+  top: 10%;
+  right: 2%;
+  max-width: 400px;
+  z-index: 100;
+}
+.notifications-page .notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 4em;
+}
+.notifications-page .notifications .notification:last-child {
+  border-bottom: none;
+}
+.notifications-page .notifications .notification.read {
+  font-size: 13px;
+}
+.notifications-page .empty-message {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+}
+.notifications-page .empty-message p {
+  font-size: 1.5em;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.notification {
+  display: flex;
+  gap: 3em;
+  padding: 2em 0;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-color);
+}
+.notification > div {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 95%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+.notification > i {
+  font-size: 2em;
+  color: var(--primary-color);
+}
+.notification .buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  align-items: center;
+  min-width: 300px;
+  flex: 1 1 25%;
+}
+.notification .buttons button {
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+.notification .buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+.notification .buttons button:last-child {
+  color: red;
+  border-color: red;
+}
+.notification .buttons button:last-child {
+  color: red;
+}
+.notification p {
+  flex: 1 1 60%;
+  min-width: 200px;
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+.notifications-page .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+.notifications-page .title h1 {
+  font-size: 2em;
+  flex: 1 1 70%;
+}
+.notifications-page .title .buttons {
+  flex: 1 1 20%;
+  min-width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+}
+.title .buttons button {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+  font-weight: bold
+}
+.title .buttons button:hover {
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+}
+.title .buttons button:last-child {
+  color: red;
+  border-color: red;
+}
+
+
+
+.notifications .notification p span {
+  font-weight: bold;
+}
